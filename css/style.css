@@ -1,0 +1,124 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+/* 置中的方法:從display到align-items */
+html, body {
+  background-color: #005CAF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.all {
+  width: 380px;
+  background-color: #f3f3f3;
+  /* 上,下,糊度 */
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.all:hover {
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
+.all .top {
+  height: 330px;
+  position: relative;
+  background-image: url(http://www.walkerland.com.tw/image/poi/p60906/m35324/ce4800640eb49da93ec311b00742aa23e21576c2.jpg);
+  background-size: cover;
+}
+.all .top .name {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  padding: 5px 15px;
+  letter-spacing: 2px;
+  color: #f3f3f3;
+  /* 字背後的漸層 */
+  background: -webkit-linear-gradient(transparent 0%, black 100%);
+  background: linear-gradient(transparent 0%, black 100%);
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.all .top .name .smalltext {
+  font-size: 14px;
+  padding: 5px;
+}
+.all .top .tag {
+  background-image: url();
+  width: 25px;
+  height: 60px;
+  background-color: #081731;
+  float: right;
+}
+.all .top .cirButton {
+  width: 50px;
+  height: 50px;
+  background-color: #081731;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+}
+.all .bottom {
+  padding: 10px 20px 20px 20px;
+}
+.all .bottom ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.all .bottom ul li {
+  padding: 5px 0px;
+}
+.all .bottom ul li h3 {
+  display: inline-block;
+  margin: 0;
+}
+.all .bottom .buttons {
+  margin-top: 30px;
+}
+.all .bottom .buttons .btn {
+  display: inline-block;
+  padding: 5px 20px;
+  letter-spacing: 1px;
+}
+.all .bottom .buttons .btnWebsite {
+  float: right;
+  background-color: #081731;
+  color: #f3f3f3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.all .bottom .buttons .btnWebsite:hover {
+  background-color: #2d71ad;
+}
+.all .bottom .buttons .btnNews {
+  background-color: #f3f3f3;
+  border: solid 1px #081731;
+  color: #081731;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.all .bottom .buttons .btnNews:hover {
+  background-color: #081731;
+  color: #f3f3f3;
+}
+
+a {
+  color: initial;
+}

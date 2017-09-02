@@ -1,0 +1,104 @@
+$color_white: #f3f3f3
+$color_black: #081731
+$color_pink_start: #EEA9A9
+$color_blue: #005CAF
+*
+  font-family: 微軟正黑體
+  // border: solid 1px
+/* 置中的方法:從display到align-items
+html,body
+  background-color: $color_blue
+  display: flex
+  width: 100%
+  height: 100%
+  justify-content: center
+  align-items: center
+  font-size: 14px
+.all
+  width: 380px
+  background-color: $color_white
+  /* 上,下,糊度
+  box-shadow: 0 0 35px rgba(0,0,0,0.3)
+  transition: 0.5s
+  &:hover
+    box-shadow: 5px 5px 60px rgba(0,0,0,0.4)
+    transform: translate(-5px,-5px)
+    
+  .top
+    height: 330px
+    position: relative
+    background-image: url(http://www.walkerland.com.tw/image/poi/p60906/m35324/ce4800640eb49da93ec311b00742aa23e21576c2.jpg)
+    background-size: cover
+    .name
+      // color: $color_white
+      position: absolute
+      margin: 0
+      left: 0
+      bottom: 0
+      padding: 5px 15px
+      letter-spacing: 2px
+      color: $color_white
+      /* 字背後的漸層
+      // background-color: rgba(0,0,0,0.4)
+      background: linear-gradient(transparent 0%,black 100% )
+      width: 100%
+      box-sizing: border-box
+      padding-top: 30px
+      padding-bottom: 15px
+      .smalltext
+        font-size: 14px
+        padding: 5px
+    .tag
+      background-image: url()
+      width: 25px
+      height: 60px
+      background-color: $color_black
+      float: right
+      
+    .cirButton
+      width: 50px
+      height: 50px
+      background-color: $color_black
+      border-radius: 50%
+      position: absolute
+      right: 30px
+      bottom: -20px
+  .bottom
+    padding: 10px 20px 20px 20px
+    ul
+      list-style: none
+      padding-left: 0px
+      li
+        padding: 5px 0px
+        h3
+          display: inline-block
+          margin: 0
+    .buttons
+      margin-top: 30px
+      .btn
+        display: inline-block
+        padding: 5px 20px
+        letter-spacing: 1px
+      .btnWebsite
+        float: right
+        background-color: $color_black
+        color: $color_white
+        transition: 0.5s
+        &:hover
+          background-color: #2d71ad
+
+      .btnNews
+        background-color: $color_white
+        border: solid 1px $color_black
+        color: $color_black
+        transition: 0.5s
+        &:hover
+          background-color: $color_black
+          color: $color_white
+        
+        
+      
+a
+  color: initial
+  
+  
